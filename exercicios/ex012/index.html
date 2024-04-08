@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tentre abrir  esse site em vários dispositivos diferentes ou simplesmente aumente e diminuia o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="foto flexiviel">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <audio preloud="metadata" autoplay controls>
+
+    <source src="midias/Cancun - Topher Mohr and Alex Elena.mp3"></audio>
+
+  <video width="560" poster="midias/pexels-saruul-saruulaa-5489581 (1080p).mp4" controls>
+    <pre></pre>
+    <source src="midias/pexels-saruul-saruulaa-5489581 (1080p).mp4" type="">
+
+  </video>
+  <h1>Inserindo videos do Youtube</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/0rFAKnVpJU0?si=pd_qTScT3ldIzvll" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <iframe src="https://player.vimeo.com/video/172578124?h=b42f05c3e9&color=ff0179&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

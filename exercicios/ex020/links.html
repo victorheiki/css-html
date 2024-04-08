@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Links</title>
+    
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+           color: red; 
+           text-decoration: none;
+        }
+        a:visited{
+            color: darkred
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+              }
+        a:active{
+            color: yellow;
+        }
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+                }  
+        a.especial::before{
+            content: '@';
+        }          
+                  
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="https://gustavoguanabara.gifthub.io" target="_blank">Repositório do gifthub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do cursoemvideo</a></li>
+    </ul>
+
+    # = id
+    . = class
+    : = Pseudo-classes
+    :: =  pseudo-element 
+    > = clildren
+
+    
+</body>
+</html>
