@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="arquivo.js" method="post" autocomplete="off">
+        <p>
+            <label for="iano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023"
+            oninput="idade.innerHTML = ano_atual - Number(iano.value)">
+        </p>
+        <p>
+            <label for="idade">Sua idade é:</label>
+            <output id="idade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Excluir">
+        </p>
+    </form>
+
+    <script>
+        let ano_atual = new Date().getFullYear();
+    </script>
+</body>
+<input type="number" name="num" id="inum" min="1950" max="2020" oninput="iidade.innerHTML=Number('2024')-Number(iano.value)">
+
+
+</html>
